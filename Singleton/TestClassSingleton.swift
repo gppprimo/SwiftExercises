@@ -16,7 +16,7 @@ class TestClassSingleton {
     var instantiated : Bool = false
     
     private init() {
-        
+        print("Singltpne Created")
         self.instantiated = true
     }
     
