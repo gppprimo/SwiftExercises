@@ -13,6 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let factory = Factory()
+        factory.factoryMethod(choice: "T")?.draw()
+        factory.factoryMethod(choice: "S")?.draw()
+        factory.factoryMethod(choice: "C")?.draw()
     }
 
     override func didReceiveMemoryWarning() {
