@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         let dP2 = DocumentParagraph(text: "1.2")
         let dP3 = DocumentParagraph(text: "2.1")
         let dP4 = DocumentParagraph(text: "2.2")
+        let dP5 = DocumentParagraph(text: "3.1")
         
         let dC1 = DocumentComposite()
         dC1.add(documentComponent: dP1)
@@ -28,6 +29,13 @@ class ViewController: UIViewController {
         dC2.add(documentComponent: dP3)
         dC2.add(documentComponent: dP4)
         dC2.write()
+        
+        let dC = DocumentComposite()
+        dC.add(documentComponent: dC1)
+        dC.add(documentComponent: dC2)
+        dC.add(documentComponent: dP5)
+        dC.write()
+        
     }
 
     override func didReceiveMemoryWarning() {
